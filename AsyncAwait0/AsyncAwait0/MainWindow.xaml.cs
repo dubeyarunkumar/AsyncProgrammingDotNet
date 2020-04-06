@@ -23,8 +23,11 @@ namespace AsyncAwait0
     /// </summary>
     public partial class MainWindow : Window
     {
-        //string apiKey = "c037fd79a0msh45bb7cba3853769p18302cjsnf5af9c082f02";
-        string accesstoken = "Bearer azhjXEBXKSG-5Hg_snbg";
+        /// <summary>
+        /// go to https://the-one-api.herokuapp.com/ to get the access token to be used for accessing the LOTR WebAPI.
+        /// While accessing the API send this token in Authorization header as "Bearer [[access token]]" e.g. "Bearer qwerty1234_567"
+        /// </summary>
+        string accesstoken = "Bearer [your access token]";
         public MainWindow()
         {
             InitializeComponent();
