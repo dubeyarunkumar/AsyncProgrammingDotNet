@@ -86,42 +86,6 @@ namespace AsyncAwait1
             }
         }
 
-        //private async void SearchButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    AppProgressBar.Visibility = Visibility.Visible;
-
-        //    var region = RegionTextBox.Text;
-        //    var rapidAPIKey = string.IsNullOrWhiteSpace(RapidAPIKey.Text) ? apiKey : RapidAPIKey.Text;
-
-
-        //    using (var client = new HttpClient())
-        //    {
-        //        client.DefaultRequestHeaders.Add("x-rapidapi-host", "apidojo-yahoo-finance-v1.p.rapidapi.com");
-        //        client.DefaultRequestHeaders.Add("x-rapidapi-key", rapidAPIKey);
-
-
-        //        var url = $"https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/get-summary?region={region}&lang=en";
-
-        //        var response = await client.GetAsync(url);
-
-        //        try
-        //        {
-        //            response.EnsureSuccessStatusCode();
-
-        //            var content = await response.Content.ReadAsStringAsync();
-
-        //        }
-        //        catch (Exception ex)
-        //        {
-
-        //            AppNotesTextBlock.Text = ex.Message;
-        //        }
-
-        //    }
-
-        //    AppProgressBar.Visibility = Visibility.Hidden;
-
-        //}
     }
 
     internal class LOTRCharacter
