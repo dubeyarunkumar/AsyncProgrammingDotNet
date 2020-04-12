@@ -1,0 +1,25 @@
+﻿<Window x:Class="AsyncAwait4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsyncAwait4"
+        mc:Ignorable="d"
+        Title="LOTR Characters" Height="450" Width="800">
+    <Grid>
+
+        <TextBlock x:Name="AppNotesTextBlock" HorizontalAlignment="Left" Margin="581,179,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="231" Width="200"/>
+        <DataGrid x:Name="LOTRCharacterGrid" HorizontalAlignment="Left" Height="385" Margin="10,10,0,0" VerticalAlignment="Top" Width="560"/>
+        <Button x:Name="SearchButton" Content="Async Search" HorizontalAlignment="Left" Margin="578,29,0,0" VerticalAlignment="Top" Width="90" Click="SearchButton_Click" Height="23"/>
+        <Button x:Name="ClearGridButton" Content="Clear Grid" HorizontalAlignment="Left" Margin="687,29,0,0" VerticalAlignment="Top" Width="90" Height="23" Click="ClearGridButton_Click" RenderTransformOrigin="0.436,0.644" />
+        <ProgressBar x:Name="AppProgressBar" HorizontalAlignment="Left" Height="15" Margin="10,400,0,0.5" VerticalAlignment="Top" Width="560" Visibility="Visible" IsIndeterminate="True" Grid.Column="1"/>
+        <RichTextBox HorizontalAlignment="Left" Height="105" Margin="581,63,0,0" VerticalAlignment="Top" Width="200" ToolTip="You should be able to type here if thread is not blocked" RenderTransformOrigin="0.506,0.523">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
